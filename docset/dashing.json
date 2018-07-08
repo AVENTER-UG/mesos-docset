@@ -1,0 +1,14 @@
+{
+    "name": "Apache Mesos",
+    "package": "Apache Mesos",
+    "index": "docs/home.html",
+    "selectors": {
+      "h1.title": "Package"
+    },
+    "ignore": [
+        "ABOUT"
+    ],
+    "icon32x32": "",
+    "allowJS": false,
+    "ExternalURL": ""
+}
