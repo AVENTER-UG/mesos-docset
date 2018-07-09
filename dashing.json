@@ -4,7 +4,7 @@
     "index": "home.html",
     "selectors": {
         "h1.title": {
-            "type":"Package",
+            "type":"Category",
             "regexp": "Apache Mesos - ",
             "replacement": ""
         }

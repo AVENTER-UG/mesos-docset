@@ -1,9 +1,9 @@
 #!/bin/bash
 
+set -e
+
 input_path=$1
 output_path=$2
-
-cp -R "${input_path}/images" "${output_path}/"
 
 for f in $(find $input_path -name '*')
 do
