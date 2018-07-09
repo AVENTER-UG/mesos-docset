@@ -2,8 +2,10 @@
 
 set -e
 
+project="Apache Mesos"
+
 if [[ $# -eq 0 ]] ; then
-    echo "Missing path to Apache Mesos project root folder."
+    echo "Missing path to ${project} project root folder."
     echo "Example:"
     echo "  ${0} ../mesos"
     exit 1
@@ -29,5 +31,11 @@ echo "# converting markdown to html..."
 
 echo "# building docset..."
 cd "${output}"
-dashing build "Apache Mesos"
+dashing build "${project}"
 cd ..
+
+echo "# adding icon..."
+cp icon.png "${output}/${project}.docset/icon.png"
+cp icon@2x.png "${output}/${project}.docset/icon@2x.png"
+
+echo "# done!"
