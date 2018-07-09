@@ -1,9 +1,13 @@
 {
     "name": "Apache Mesos",
     "package": "Apache Mesos",
-    "index": "docs/home.html",
+    "index": "home.html",
     "selectors": {
-      "h1.title": "Package"
+        "h1.title": {
+            "type":"Package",
+            "regexp": "Apache Mesos - ",
+            "replacement": ""
+        }
     },
     "ignore": [
         "ABOUT"
