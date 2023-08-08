@@ -11,7 +11,7 @@ if [[ $# -eq 0 ]] ; then
     exit 1
 fi
 
-input=$1/docs
+input=$1
 output=docset
 
 if [ ! -d "${output}" ]; then
